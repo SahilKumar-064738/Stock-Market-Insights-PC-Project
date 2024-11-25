@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92VxtDOTJmw4ywrGfI65xjNxHvcS9Dq-fUA&s")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 3px solid #ffffff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header nav a {
+  color: #f5f5f5;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background: #ffffff;
+  color: #000;
+}
+
+main {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #00d1ff;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Gallery for Analysis Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+.gallery .photo-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #ffffff;
+}
+
+.gallery .photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Form Section */
+iframe {
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Response List */
+.response-list {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5em;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+}
+
+.response-item {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 2px solid #00d1ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.response-item strong {
+  color: #00d1ff;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  margin-top: 20px;
+  border-top: 3px solid #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 1.5em;
+  }
+}
